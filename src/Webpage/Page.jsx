@@ -1,6 +1,6 @@
 import React from "react"
 import "./Page.css"
-import profilePic from '../assets/profile-pic.png'
+const profilePic = "/profile-pic.png"
 
 export default function Home() {
   return (
