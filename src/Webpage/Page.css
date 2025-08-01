@@ -140,8 +140,48 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-top: 0; /* Remove top margin */
-  padding: 0; /* Remove padding */
+}
+
+/* Responsive Height Adjustments */
+@media screen and (max-width: 1024px) {
+  .hero-section {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+    margin-top: 60px; /* Account for fixed navbar */
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section {
+    height: 70vh;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 6vw, 4rem);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .hero-section {
+    height: 60vh;
+  }
+}
+
+/* For very short and wide screens (landscape mobile) */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .hero-section {
+    height: 100vh;
+    margin-top: 40px;
+  }
 }
 
 .hero-video-container {
@@ -368,6 +408,10 @@ body {
   .nav-links {
     gap: 1.5rem;
   }
+
+  .hero-section {
+    height: 90vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -400,8 +444,12 @@ body {
   }
 
   .hero-section {
-    height: calc(100vh - 60px); /* Adjust for navbar height */
-    margin-top: 60px; /* Add margin equal to navbar height */
+    height: 80vh;
+    margin-top: 60px; /* Account for fixed navbar */
+  }
+
+  .hero-content {
+    padding: 0 1rem;
   }
 
   .work-section {
@@ -427,9 +475,16 @@ body {
     width: 10px;
     height: 10px;
   }
+
+  .hero-section {
+    height: 70vh;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 6vw, 4rem);
+  }
 }
 
-/* Extra small devices (390px and below) */
 @media screen and (max-width: 390px) {
   .nav-container {
     padding: 0 0.15rem;
@@ -457,6 +512,18 @@ body {
   .profile-pic {
     width: 18px;
     height: 18px;
+  }
+
+  .hero-section {
+    height: 60vh;
+  }
+}
+
+/* For very short and wide screens (landscape mobile) */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .hero-section {
+    height: 100vh;
+    margin-top: 40px;
   }
 }
 
