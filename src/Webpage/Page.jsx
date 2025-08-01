@@ -15,13 +15,16 @@ export default function Home() {
         <div className="nav-container">
           <div className="nav-logo">
             <img src={profilePic} alt="Piyush" className="profile-pic" />
-            <span>PIYUSH</span>
+            <span className="name">PIYUSH</span>
           </div>
-          <div className="nav-links">
+          <div className="nav-logo">
             <a href="#work" className="work-link">
               <img src={briefcaseIcon} alt="Work" className="nav-icon" />
               Work
             </a>
+          </div>
+          <div className="nav-links">
+
             <a
               href="https://wa.me/918168000254?text=Hi%20Piyush"
               className="social-btn whatsapp-btn"
