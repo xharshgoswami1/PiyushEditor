@@ -1,6 +1,6 @@
 import React from "react"
 import "./Page.css"
-const profilePic = "/profile-pic.png"
+const profilePic = "../../Public/profile-pic.png"
 
 export default function Home() {
   return (
@@ -15,11 +15,27 @@ export default function Home() {
           <a href="#work">Work</a>
           <a
             href="https://wa.me/918168000254?text=Hi%20Piyush"
-            className="whatsapp-btn"
+            className="social-btn whatsapp-btn"
             target="_blank"
             rel="noopener noreferrer"
           >
             WhatsApp
+          </a>
+          <a
+            href="https://www.linkedin.com/in/piyush-goswami9"
+            className="social-btn linkedin-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://www.instagram.com/mai.piyushhoon"
+            className="social-btn instagram-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
           </a>
         </div>
       </nav>
@@ -164,12 +180,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="footer">
-        <div>Designed & animated by PIYUSH</div>
-        <div className="footer-contact">Contact: piyush@email.com | Instagram | LinkedIn</div>
-        <div>Designed & animated by PIYUSH</div>
-        <div className="footer-contact">Contact: piyush@email.com | Instagram | LinkedIn</div>
-      </footer>
+      {/* TESTIMONIALS SECTION */}
+      <section className="testimonials">
+        <h2 className="section-title">What Clients Say</h2>
+        <div className="testimonial-grid">
+          <div className="testimonial-card">
+            <p className="testimonial-text">
+              "Piyush's creative vision and technical expertise brought our brand story to life in ways we never imagined. The 3D animations were absolutely stunning!"
+            </p>
+            <div className="testimonial-author">Sarah Johnson</div>
+            <div className="testimonial-role">Creative Director, Design Studio</div>
+          </div>
+
+          <div className="testimonial-card">
+            <p className="testimonial-text">
+              "Working with Piyush was incredible. He perfectly balanced creativity with professionalism, delivering beyond our expectations."
+            </p>
+            <div className="testimonial-author">Michael Chen</div>
+            <div className="testimonial-role">Marketing Head, Tech Innovations</div>
+          </div>
+
+          <div className="testimonial-card">
+            <p className="testimonial-text">
+              "The motion graphics Piyush created for our campaign were exceptional. His ability to combine 2D and 3D elements is truly remarkable."
+            </p>
+            <div className="testimonial-author">Emma Rodriguez</div>
+            <div className="testimonial-role">Brand Manager, Creative Agency</div>
+          </div>
+        </div>
+      </section>
     </main>)
 }
